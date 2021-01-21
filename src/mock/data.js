@@ -86,32 +86,6 @@ export const contactData = {
   email: 'zj9zhang@uwaterloo.ca',
 };
 
-// FOOTER DATA
-export const footerData = {
-  networks: [
-    {
-      id: nanoid(),
-      name: 'twitter',
-      url: 'https://twitter.com/Ninetyback',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: 'https://codepen.io/fakesquid',
-    },
-    {
-      id: nanoid(),
-      name: 'linkedin',
-      url: 'https://www.linkedin.com/in/zjjackzhang/',
-    },
-    {
-      id: nanoid(),
-      name: 'github',
-      url: 'https://github.com/fakesquid',
-    },
-  ],
-};
-
 // Github start/fork buttons
 export const githubButtons = {
   isEnabled: false, // set to false to disable the GitHub stars/fork buttons

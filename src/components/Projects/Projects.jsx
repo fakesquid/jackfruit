@@ -1,118 +1,99 @@
-import React, { useContext, useEffect, useState } from 'react';
-import Fade from 'react-reveal/Fade';
-import Tilt from 'react-tilt';
-import { Container, Row, Col } from 'react-bootstrap';
-import PortfolioContext from '../../context/context';
-import Title from '../Title/Title';
-import ProjectImg from '../Image/ProjectImg';
+import React from 'react';
+import { Link } from 'gatsby';
+import Card from '../Card/Card';
+
+const Shenkii = () => {
+  return (
+    <div className="container">
+      <div className="project-inner">
+        <Card bgImage={require('../../images/shenkii_card.jpg')} />
+
+        <div className="project-details">
+          <h1 className="project-title">Shenkii</h1>
+          <h3>Building the future Web 3.0 marketplace for Manga, Doujinshi, and Anime art.</h3>
+          <Link className="project-link disabled" to="/work/shenkii">
+            Case Study Coming Soon
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const Travelwise = () => {
+  return (
+    <div className="container">
+      <div className="project-inner">
+        <Card bgImage={require('../../images/travelwise_card.jpg')} />
+
+        <div className="project-details">
+          <h1 className="project-title">TravelWise</h1>
+          <h3>
+            A React web app for Waterloo Sustainable Region that help local companies coordinate
+            carpools.
+          </h3>
+          <a
+            className="project-link"
+            href="https://gotravelwise.ca/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Website
+          </a>
+          <a
+            className="project-link"
+            href="https://github.com/uwblueprint/travelwise-react"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const PFC = () => {
+  return (
+    <div className="container">
+      <div className="project-inner">
+        <Card bgImage={require('../../images/pfc.jpg')} />
+
+        <div className="project-details">
+          <h1 className="project-title" id="PFC">
+            Plastics for Change
+          </h1>
+          <h3>A React web app that manages and track the procurement of plastics</h3>
+          <a
+            className="project-link"
+            href="https://www.plasticsforchange.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Website
+          </a>
+          <a
+            className="project-link"
+            href="https://github.com/uwblueprint/plasta"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const Projects = () => {
-  const { projects } = useContext(PortfolioContext);
-
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
-  }, []);
-
   return (
-    <section id="projects">
-      <Container>
-        <div className="project-wrapper">
-          <Title title="Projects" />
-          {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
-
-            return (
-              <Row key={id}>
-                <Col lg={4} sm={12}>
-                  <Fade
-                    left={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={500}
-                    distance="30px"
-                  >
-                    <div className="project-wrapper__text">
-                      <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
-                      <div>
-                        <p>
-                          {info ||
-                            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                        </p>
-                        <p className="mb-4">{info2 || ''}</p>
-                      </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        See Live
-                      </a>
-
-                      {repo && (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
-                          href={repo}
-                        >
-                          Source Code
-                        </a>
-                      )}
-                    </div>
-                  </Fade>
-                </Col>
-                <Col lg={8} sm={12}>
-                  <Fade
-                    right={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={1000}
-                    distance="30px"
-                  >
-                    <div className="project-wrapper__image">
-                      <a
-                        href={url || '#!'}
-                        target="_blank"
-                        aria-label="Project Link"
-                        rel="noopener noreferrer"
-                      >
-                        <Tilt
-                          options={{
-                            reverse: false,
-                            max: 8,
-                            perspective: 1000,
-                            scale: 1,
-                            speed: 300,
-                            transition: true,
-                            axis: null,
-                            reset: true,
-                            easing: 'cubic-bezier(.03,.98,.52,.99)',
-                          }}
-                        >
-                          <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
-                          </div>
-                        </Tilt>
-                      </a>
-                    </div>
-                  </Fade>
-                </Col>
-              </Row>
-            );
-          })}
-        </div>
-      </Container>
-    </section>
+    <div className="projects">
+      <Shenkii />
+      <Travelwise />
+      <PFC />
+    </div>
   );
 };
 
