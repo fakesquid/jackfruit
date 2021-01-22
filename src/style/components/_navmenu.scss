@@ -28,6 +28,7 @@
     height: 100vh;
     ul {
       text-align: center;
+      padding: 0;
       li {
         margin: 6rem;
         color: #f6f7f8;
@@ -38,16 +39,8 @@
         }
         a {
           color: #f6f7f8;
-        }
-        span {
-          @media (max-width: 480px) {
-            font-size: 4rem;
-          }
-          font-size: 6rem;
-          color: #f6f7f8;
-          text-transform: capitalize;
-          margin: 0 auto;
-          font-weight: 300;
+          font-size: 3rem;
+          font-weight: 500;
         }
       }
     }

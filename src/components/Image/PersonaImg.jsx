@@ -13,12 +13,19 @@ import Img from 'gatsby-image';
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const ProjectImage = ({ id }) => {
+const UserPersonaImage = ({ id }) => {
   const data = useStaticQuery(graphql`
     query {
-      jordan1: file(relativePath: { eq: "Blacktoe.png" }) {
+      userPersona1: file(relativePath: { eq: "juntaka.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1100) {
+          fluid(maxWidth: 250) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      userPersona2: file(relativePath: { eq: "fankang.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 250) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -26,7 +33,15 @@ const ProjectImage = ({ id }) => {
     }
   `);
 
-  return <>{id === 1 && <Img fluid={data.jordan1.childImageSharp.fluid} />}</>;
+  return (
+    <>
+      {id === 1 ? (
+        <Img fluid={data.userPersona1.childImageSharp.fluid} />
+      ) : (
+        <Img fluid={data.userPersona2.childImageSharp.fluid} />
+      )}
+    </>
+  );
 };
 
-export default ProjectImage;
+export default UserPersonaImage;
