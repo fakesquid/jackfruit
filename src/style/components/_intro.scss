@@ -28,6 +28,7 @@
     }
     .main-headline {
       font-weight: 400;
+      font-size: 3.5rem;
       line-height: 5rem;
       @media (max-width: 1480px) {
         font-size: 3em;
@@ -72,6 +73,35 @@
       }
       span.underline {
         text-decoration: underline;
+      }
+    }
+
+    .others-banner {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      @media (max-width: 680px) {
+        flex-wrap: wrap;
+      }
+      @media (max-width: 768px) {
+        ul {
+          margin-right: 4rem;
+        }
+      }
+      @media (max-width: 680px) {
+        ul {
+          width: 100%;
+          margin: 2rem auto;
+        }
       }
     }
   }
