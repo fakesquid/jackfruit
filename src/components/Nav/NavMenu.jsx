@@ -40,7 +40,7 @@ const Menu = ({ setMenuState, menuState }) => {
                       exit={{ y: 300, skewY: 40 }}
                       transition={{ delay: 0, ...transition }}
                     >
-                      <Link to="/">Home</Link>
+                      <Link to="/">HOME</Link>
                     </motion.span>
                   </li>
                   {/* <li>

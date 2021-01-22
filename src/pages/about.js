@@ -25,8 +25,6 @@ export default () => {
     //     </Container>
     //   </section>
     // </>
-    <>
-      <Card bgImage={require('../images/shenkii.jpg')} />
-    </>
+    <></>
   );
 };
