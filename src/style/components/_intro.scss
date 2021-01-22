@@ -59,14 +59,26 @@
       }
       span.bold1 {
         font-weight: 700;
-        color: #ff2149;
+        background: -webkit-linear-gradient(
+          180deg,
+          rgba(218, 68, 83, 1) 0%,
+          rgba(166, 12, 142, 1) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         &:hover {
           cursor: pointer;
         }
       }
       span.bold2 {
         font-weight: 700;
-        color: #1165c8;
+        background: -webkit-linear-gradient(
+          0deg,
+          rgba(54, 51, 163, 1) 0%,
+          rgba(66, 156, 210, 1) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         &:hover {
           cursor: pointer;
         }
