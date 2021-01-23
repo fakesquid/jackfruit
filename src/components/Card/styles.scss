@@ -11,9 +11,12 @@
   transition: box-shadow 0.5s;
   will-change: transform;
   border: 15px solid white;
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
     max-width: 45%;
     max-height: 30rem;
+  }
+  @media (max-width: 1024px) {
+    margin-bottom: 2rem;
   }
   @media (max-width: 480px) {
     max-height: 240px;
