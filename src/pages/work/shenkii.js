@@ -11,8 +11,15 @@ const Shenkii = () => {
       <div className="case">
         <div className="case-title">
           <h1>Building a better marketplace for Japanese art and doujinshi with Shenkii</h1>
-          <h5>Timeline: December 2020 - Present</h5>
-          <h5>Role: Founding Product Design and Software Development</h5>
+          <h5>
+            Timeline: <span className="case-details">December 2020 - Present</span>
+          </h5>
+          <h5>
+            Role:{' '}
+            <span className="case-details">
+              Co-founder, Product Designer, and Software Developer
+            </span>
+          </h5>
         </div>
         <div className="case-banner">
           <ShenkiiImage id={1} />
@@ -59,18 +66,47 @@ const Blockchain = () => {
   return (
     <div className="case-section">
       <h1 className="case-subheading">what’s solved with blockchain?</h1>
+      <ShenkiiImage id={8} />
       <div className="case-text">
         <p>
           With the development of blockchain, several digital art marketplaces emerged to solve this
-          problem by assigning blockchain certificates to artworks.
+          problem by tokenizing artworks{' '}
+          <a
+            href="https://decrypt.co/resources/non-fungible-tokens-nfts-explained-guide-learn-blockchain"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            NFT
+          </a>{' '}
+          (non-fungible tokens) such as the{' '}
+          <a href="http://erc721.org/" target="_blank" rel="noopener noreferrer">
+            ERC-721
+          </a>
+          .
           <br />
           <br />
-          With a blockchain certificate, authenticity can be verified, the origin can be tracked,
-          and ownership can be proved.
+          With a tokenized artwork, authenticity can be verified, the origin can be tracked, and
+          ownership can be proved.
           <br />
           <br />
-          However, most blockchain art marketplaces were generic, lacked control for the artist, and
-          lacked the user experience for traditional Web 2.0.
+          However, most blockchain art marketplaces are generic, lack control for the artist, and
+          due to the nature of{' '}
+          <a
+            href="https://medium.com/l4-media/making-sense-of-web-3-c1a9e74dcae"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            web3
+          </a>
+          , lack the{' '}
+          <a
+            href="https://ethereum.org/en/developers/docs/web2-vs-web3/#web3-limitations"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            user experience
+          </a>{' '}
+          that most users are used to.
         </p>
       </div>
     </div>
@@ -99,16 +135,18 @@ const Gains = () => {
       <div className="case-text">
         <ol>
           <li>
-            Allow doujinshi artists and mangaka (manga artists) to have a platform to self-publish
-            and sell their art for cryptocurrency
+            Provide a Japanese-art focused platform to doujinshi artists and mangaka (manga artists)
+            to self-publish and sell their work for cryptocurrency
           </li>
           <br />
           <li>
-            Provide the tools to allow doujinshi artists and mangaka to protect and monetize their
-            work
+            Provide the tools to allow doujinshi artists and mangaka to protect, track, and monetize
+            their work
           </li>
           <br />
-          <li>Provide a social space for users, artists, and collectors to share and view art</li>
+          <li>
+            Provide a social space for fans, artists, and collectors to share and view Japanese art
+          </li>
         </ol>
       </div>
     </div>

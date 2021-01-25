@@ -66,6 +66,13 @@ const ShenkiiImage = ({ id }) => {
           }
         }
       }
+      competitors: file(relativePath: { eq: "market_analysis.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `);
 
@@ -83,8 +90,10 @@ const ShenkiiImage = ({ id }) => {
         <Img fluid={data.inspiration1.childImageSharp.fluid} />
       ) : id === 6 ? (
         <Img fluid={data.artpage1.childImageSharp.fluid} />
-      ) : (
+      ) : id === 7 ? (
         <Img fluid={data.artpageOld.childImageSharp.fluid} />
+      ) : (
+        <Img fluid={data.competitors.childImageSharp.fluid} />
       )}
     </>
   );
