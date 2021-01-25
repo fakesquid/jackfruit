@@ -95,18 +95,17 @@
     }
 
     .others-banner {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-
-      ul {
-        padding: 0;
+      .others-details {
+        font-size: 1.1rem;
+        font-weight: 400;
+        font-family: 'Jost', sans-serif;
+        opacity: 60%;
+        .others-title {
+          font-size: 1.1rem;
+          font-weight: 700;
+          font-family: 'Volkhov', serif;
+        }
       }
-
-      li {
-        list-style: none;
-      }
-
       @media (max-width: 680px) {
         flex-wrap: wrap;
       }

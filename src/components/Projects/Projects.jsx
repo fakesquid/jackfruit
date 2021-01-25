@@ -10,7 +10,7 @@ const Shenkii = () => {
 
         <div className="project-details">
           <h1 className="project-title">Shenkii</h1>
-          <h3>Building the future Web 3.0 marketplace for Manga, Doujinshi, and Anime art.</h3>
+          <h3>Building the future Web 3.0 marketplace for Manga, Doujinshi, and Anime art</h3>
           <Link className="project-link" to="/work/shenkii">
             Case Study
           </Link>
@@ -28,7 +28,7 @@ const Flashfood = () => {
 
         <div className="project-details">
           <h1 className="project-title">Flashfood</h1>
-          <h3>Designing a better refund flow for vendors and users.</h3>
+          <h3>Designing a better refund flow for vendors and users</h3>
           <Link className="project-link disabled" to="/work/flashfood">
             Case Study Coming Soon
           </Link>
@@ -48,7 +48,7 @@ const Travelwise = () => {
           <h1 className="project-title">TravelWise</h1>
           <h3>
             A React web app for Waterloo Sustainable Region that help local companies coordinate
-            carpools.
+            carpools
           </h3>
           <a
             className="project-link"

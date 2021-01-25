@@ -17,22 +17,26 @@ const Other = () => {
   return (
     <div className="container">
       <div className="others-banner">
-        <ul>
-          <span>Previously At:</span>
-          <li>Autodesk</li>
-          <li>Hubba</li>
-          <li>Flashfood</li>
-          <li>TD</li>
-          <li>NUS</li>
-        </ul>
-        <ul>
-          <span>Hackathons:</span>
-          <li>ETHGlobal MarketMake</li>
-          <li>Hack the North 2019</li>
-          <li>Hack the North 2018</li>
-          <li>Hack the North 2017</li>
-          <li>StarterHack 2017</li>
-        </ul>
+        <div className="others-details">
+          Currently designing for the{' '}
+          <a
+            className="others-title"
+            href="https://www.distresscentre.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Distress Centre Calgary
+          </a>{' '}
+          with{' '}
+          <a
+            className="others-title"
+            href="https://uwblueprint.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Blueprint
+          </a>
+        </div>
       </div>
     </div>
   );
@@ -43,6 +47,8 @@ const Intro = () => (
     <div className="banner">
       <div className="inner-banner">
         <Headline />
+        <br />
+        <Other />
       </div>
     </div>
   </>
