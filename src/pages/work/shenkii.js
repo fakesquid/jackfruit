@@ -35,6 +35,7 @@ const Shenkii = () => {
           <Userflow />
           <Marketplace />
           <ArtPage />
+          <TechDecisions />
           <NextSteps />
           <Learnings />
         </div>
@@ -223,10 +224,24 @@ const Userflow = () => {
           From our previous identification of the problems that persist amongst current blockchain
           marketplaces, the user experience and usability of new users to the blockchain space was a
           key problem. With so many centralized social media and web platforms closely integrated
-          with our daily lives, it may not be obvious to first-time users what it means to be a
-          decentralized platform, or what values it offers. Many users may be unfamiliar with the
-          term "wallet" in the Web 3.0 context and may be wondering why there isn't a way for them
-          to create an account.
+          with our daily lives, it may not be obvious to first-time users what it means to be a{' '}
+          <a
+            href="https://ethereum.org/en/developers/docs/web2-vs-web3/#centralization-vs-decentralization"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            decentralized
+          </a>{' '}
+          platform, or what values it offers. Many users may be unfamiliar with the term "wallet" in
+          the{' '}
+          <a
+            href="https://ethereum.org/en/developers/docs/web2-vs-web3/#practical-comparisons"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            web3
+          </a>{' '}
+          context and may be wondering why there isn't a way for them to create an account.
         </p>
         <br />
         <p>
@@ -246,7 +261,7 @@ const Userflow = () => {
             technology, and provide answers to FAQ
           </li>
           <li>
-            Provide helpful information and/or tooltips at key steps involving Web 3.0 technologies
+            Provide helpful information and/or tooltips at key steps involving web3 technologies
           </li>
         </ol>
       </div>
@@ -317,6 +332,34 @@ const ArtPage = () => {
   );
 };
 
+const TechDecisions = () => {
+  return (
+    <div className="case-section">
+      <h1 className="case-subheading">make the user's life easier</h1>
+      <div className="case-text">
+        <ShenkiiImage id={9} />
+        <h5 className="helper-text">Traditional new user onboarding experience with Metamask</h5>
+        <ShenkiiImage id={10} />
+        <h5 className="helper-text">New user onboarding experience with Fortmatic</h5>
+        <p>
+          Due to the nature of web3, traditional user experience with onboarding to a decentralized
+          app would require many steps and blockchain software that may not be intuitive to
+          everyone. By choosing to use Fortmatic, a simpler and familiar experience can be provided
+          to the user. By keeping the friction and barrier of entry to the decentralized app low,
+          more users can be obtained.
+        </p>
+        <ShenkiiImage id={11} />
+        <h5 className="helper-text">Fortmatic wallet modal</h5>
+        <p>
+          By using Fortmatic, the developer experience was simplified too. Instead of worrying about
+          the UIs of how users will connect to their wallets, Fortmatic's login modal can simplify
+          and save development time, which is crucial in a small and lean team.
+        </p>
+      </div>
+    </div>
+  );
+};
+
 const NextSteps = () => {
   return (
     <div className="case-section">
@@ -347,11 +390,11 @@ const Learnings = () => {
       <div className="case-text">
         <p>
           Working on both the design and development of Shenkii has taught me a lot about
-          decentralized applications (dApp), blockchain, Web 3.0, and the doujinshi art industry.
-          While it was the first time for our team to develop with blockchain technologies, it was
-          also my first time in taking a lead role in product design. With those two factors
-          combined, I faced a lot of unknowns and technical constraints when designing Shenkii. One
-          of the biggest challenges that I continuously work on with design is how to make the dApp
+          decentralized applications (dApp), blockchain, web3, and the doujinshi art industry. While
+          it was the first time for our team to develop with blockchain technologies, it was also my
+          first time in taking a lead role in product design. With those two factors combined, I
+          faced a lot of unknowns and technical constraints when designing Shenkii. One of the
+          biggest challenges that I continuously work on with design is how to make the dApp
           experience for new users feel familiar and frictionless.
         </p>
       </div>

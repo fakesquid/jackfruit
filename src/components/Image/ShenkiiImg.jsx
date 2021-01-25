@@ -73,6 +73,27 @@ const ShenkiiImage = ({ id }) => {
           }
         }
       }
+      onboard1: file(relativePath: { eq: "onboard1.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      onboard2: file(relativePath: { eq: "onboard2.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      fortmatic1: file(relativePath: { eq: "fortmatic1.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `);
 
@@ -92,8 +113,14 @@ const ShenkiiImage = ({ id }) => {
         <Img fluid={data.artpage1.childImageSharp.fluid} />
       ) : id === 7 ? (
         <Img fluid={data.artpageOld.childImageSharp.fluid} />
-      ) : (
+      ) : id === 8 ? (
         <Img fluid={data.competitors.childImageSharp.fluid} />
+      ) : id === 9 ? (
+        <Img fluid={data.onboard1.childImageSharp.fluid} />
+      ) : id === 10 ? (
+        <Img fluid={data.onboard2.childImageSharp.fluid} />
+      ) : (
+        <Img fluid={data.fortmatic1.childImageSharp.fluid} />
       )}
     </>
   );
