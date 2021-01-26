@@ -118,6 +118,7 @@ const TheSolution = () => {
   return (
     <div className="case-section">
       <h1 className="case-subheading">the solution</h1>
+      <ShenkiiImage id={12} />
       <div className="case-text">
         <p>
           A blockchain art marketplace for Japanese-styled art, manga, and doujinshi. The platform

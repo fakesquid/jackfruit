@@ -17,77 +17,84 @@ import Img from 'gatsby-image';
 const ShenkiiImage = ({ id }) => {
   const data = useStaticQuery(graphql`
     query {
-      shenkii1: file(relativePath: { eq: "shenkii_web.png" }) {
+      shenkii1: file(relativePath: { eq: "shenkii/shenkii_web.png" }) {
         childImageSharp {
           fluid(maxWidth: 1100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      userflow1: file(relativePath: { eq: "userflow.png" }) {
+      userflow1: file(relativePath: { eq: "shenkii/userflow.png" }) {
         childImageSharp {
           fluid(maxWidth: 1100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      marketplace1: file(relativePath: { eq: "shenkii_market1.png" }) {
+      marketplace1: file(relativePath: { eq: "shenkii/shenkii_market1.png" }) {
         childImageSharp {
           fluid(maxWidth: 1100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      marketplace2: file(relativePath: { eq: "shenkii_market2.png" }) {
+      marketplace2: file(relativePath: { eq: "shenkii/shenkii_market2.png" }) {
         childImageSharp {
           fluid(maxWidth: 1100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      inspiration1: file(relativePath: { eq: "inspiration1.png" }) {
+      inspiration1: file(relativePath: { eq: "shenkii/inspiration1.png" }) {
         childImageSharp {
           fluid(maxWidth: 1100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      artpage1: file(relativePath: { eq: "art_page1.png" }) {
+      artpage1: file(relativePath: { eq: "shenkii/art_page1.png" }) {
         childImageSharp {
           fluid(maxWidth: 1100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      artpageOld: file(relativePath: { eq: "art_page2.png" }) {
+      artpageOld: file(relativePath: { eq: "shenkii/art_page2.png" }) {
         childImageSharp {
           fluid(maxWidth: 1100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      competitors: file(relativePath: { eq: "market_analysis.png" }) {
+      competitors: file(relativePath: { eq: "shenkii/market_analysis.png" }) {
         childImageSharp {
           fluid(maxWidth: 1100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      onboard1: file(relativePath: { eq: "onboard1.png" }) {
+      onboard1: file(relativePath: { eq: "shenkii/onboard1.png" }) {
         childImageSharp {
           fluid(maxWidth: 1100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      onboard2: file(relativePath: { eq: "onboard2.png" }) {
+      onboard2: file(relativePath: { eq: "shenkii/onboard2.png" }) {
         childImageSharp {
           fluid(maxWidth: 1100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      fortmatic1: file(relativePath: { eq: "fortmatic1.png" }) {
+      fortmatic1: file(relativePath: { eq: "shenkii/fortmatic1.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      compare1: file(relativePath: { eq: "shenkii/compare.png" }) {
         childImageSharp {
           fluid(maxWidth: 1100) {
             ...GatsbyImageSharpFluid
@@ -119,8 +126,10 @@ const ShenkiiImage = ({ id }) => {
         <Img fluid={data.onboard1.childImageSharp.fluid} />
       ) : id === 10 ? (
         <Img fluid={data.onboard2.childImageSharp.fluid} />
-      ) : (
+      ) : id === 11 ? (
         <Img fluid={data.fortmatic1.childImageSharp.fluid} />
+      ) : (
+        <Img fluid={data.compare1.childImageSharp.fluid} />
       )}
     </>
   );
