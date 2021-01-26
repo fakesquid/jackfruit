@@ -12,7 +12,7 @@ const Shenkii = () => {
         <div className="case-title">
           <h1>Building a better marketplace for Japanese art and doujinshi with Shenkii</h1>
           <h5>
-            Timeline: <span className="case-details">December 2020 - Present</span>
+            Timeline: <span className="case-details">October 2020 - Present</span>
           </h5>
           <h5>
             Role:{' '}
@@ -119,6 +119,7 @@ const TheSolution = () => {
     <div className="case-section">
       <h1 className="case-subheading">the solution</h1>
       <ShenkiiImage id={12} />
+      <h5 className="helper-text">Current NFT marketplaces vs Shenkii</h5>
       <div className="case-text">
         <p>
           A blockchain art marketplace for Japanese-styled art, manga, and doujinshi. The platform
