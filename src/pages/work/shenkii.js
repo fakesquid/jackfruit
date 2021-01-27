@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../style/main.scss';
+import ReactPlayer from 'react-player/lazy';
 
 import UserPersonaImage from '../../components/Image/PersonaImg';
 import ShenkiiImage from '../../components/Image/ShenkiiImg';
@@ -341,7 +342,15 @@ const Collection = () => {
     <div className="case-section">
       <h1 className="case-subheading">collecting can be social</h1>
       <div className="case-text">
-        <img src={collectionGIF} alt="User Collection GIF" className="GIF" />
+        <div className="gif-wrapper">
+          <ReactPlayer
+            url="https://vimeo.com/505119430"
+            playing={true}
+            loop={true}
+            controls={false}
+            muted={true}
+          />
+        </div>
         <h5 className="helper-text">Another user's collection page</h5>
         <p>
           From my user research, an important insight that I've collected was that the users feel
