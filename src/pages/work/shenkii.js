@@ -4,6 +4,7 @@ import '../../style/main.scss';
 import UserPersonaImage from '../../components/Image/PersonaImg';
 import ShenkiiImage from '../../components/Image/ShenkiiImg';
 import Footer from '../../components/Footer/Footer';
+import collectionGIF from '../../images/shenkii/collection1.gif';
 
 const Shenkii = () => {
   return (
@@ -340,38 +341,35 @@ const Collection = () => {
     <div className="case-section">
       <h1 className="case-subheading">collecting can be social</h1>
       <div className="case-text">
-        <ShenkiiImage id={13} />
+        <img src={collectionGIF} alt="User Collection GIF" className="GIF" />
         <h5 className="helper-text">Another user's collection page</h5>
         <p>
-          With the art page, I continue to design with the philosophy that when building an online
-          marketplace for digital art, art should be the focus of the user's attention. Like the
-          real-world experience of walking up to a piece of artwork that you find intriguing in the
-          gallery, I wanted the user to have a similar experience when selecting a specific piece of
-          artwork. On the art page, the user is able to see the artwork in much greater detail and
-          size. More relevant information such as detailed description, number of copies, past
-          ownership will also be displayed.
+          From my user research, an important insight that I've collected was that the users feel
+          that it's important for them to be able to showcase their collection to other people. With
+          that in mind, I thought it would make sense to design a layer of rich social features on
+          top of the barebone collection page. To keep the experience familiar, I designed a social
+          sidebar with influence from Instagram and Twitter. The sidebar has its position fixed when
+          scrolling so that it remains a point of interest while the user scrolls through the
+          collection. I wanted the collector to be able to tell their stories. When the user wants
+          to make a connection to the story or follow the collector, it can be done easily. An
+          improvement that I would want to add on top of this would be the option to discover and
+          showcase art to like-minded individuals.
         </p>
         <ShenkiiImage id={14} />
         <h5 className="helper-text">An artist's collection page</h5>
         <p>
-          With the art page, I continue to design with the philosophy that when building an online
-          marketplace for digital art, art should be the focus of the user's attention. Like the
-          real-world experience of walking up to a piece of artwork that you find intriguing in the
-          gallery, I wanted the user to have a similar experience when selecting a specific piece of
-          artwork. On the art page, the user is able to see the artwork in much greater detail and
-          size. More relevant information such as detailed description, number of copies, past
-          ownership will also be displayed.
+          If the user has created artworks before, their social sidebar on the collection page
+          changes to reflect that. Once the user's role gets upgraded to an artist, additional tools
+          and features are provided. One of the features that we want to implement in the future is
+          Commission. An insight that I learned from the research was that users like the
+          artwork/doujinshi more if it's personally made for them.
         </p>
         <ShenkiiImage id={15} />
         <h5 className="helper-text">the user's collection page</h5>
         <p>
-          With the art page, I continue to design with the philosophy that when building an online
-          marketplace for digital art, art should be the focus of the user's attention. Like the
-          real-world experience of walking up to a piece of artwork that you find intriguing in the
-          gallery, I wanted the user to have a similar experience when selecting a specific piece of
-          artwork. On the art page, the user is able to see the artwork in much greater detail and
-          size. More relevant information such as detailed description, number of copies, past
-          ownership will also be displayed.
+          To add a little incentive for the users to create and collect more artworks, I added
+          flairs in the social sidebar to showcase their progression. As the user collects and/or
+          create more artworks, the flairs will progressively upgrade.
         </p>
       </div>
     </div>
