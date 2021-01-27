@@ -35,6 +35,7 @@ const Shenkii = () => {
           <Userflow />
           <Marketplace />
           <ArtPage />
+          <Collection />
           <TechDecisions />
           <NextSteps />
           <Learnings />
@@ -259,8 +260,8 @@ const Userflow = () => {
           <li>Build an experience that the users are familiar with</li>
           <li>Choose technologies that minimize the barrier of entry and learning</li>
           <li>
-            Make a comprehensive and informational About page that will educate the users on the
-            technology, and provide answers to FAQ
+            Make a comprehensive and informational <i>About</i> page that will educate the users on
+            the technology, and provide answers to FAQ
           </li>
           <li>
             Provide helpful information and/or tooltips at key steps involving web3 technologies
@@ -274,7 +275,7 @@ const Userflow = () => {
 const Marketplace = () => {
   return (
     <div className="case-section">
-      <h1 className="case-subheading">marketplace exploration</h1>
+      <h1 className="case-subheading">designing the marketplace</h1>
       <div className="case-text">
         <ShenkiiImage id={5} />
         <h5 className="helper-text">Inspiration of the marketplace design</h5>
@@ -307,7 +308,7 @@ const Marketplace = () => {
 const ArtPage = () => {
   return (
     <div className="case-section">
-      <h1 className="case-subheading">art is the highlight</h1>
+      <h1 className="case-subheading">highlight the artwork</h1>
       <div className="case-text">
         <ShenkiiImage id={6} />
         <h5 className="helper-text">Individual Art page</h5>
@@ -334,10 +335,53 @@ const ArtPage = () => {
   );
 };
 
+const Collection = () => {
+  return (
+    <div className="case-section">
+      <h1 className="case-subheading">collecting can be social</h1>
+      <div className="case-text">
+        <ShenkiiImage id={13} />
+        <h5 className="helper-text">Another user's collection page</h5>
+        <p>
+          With the art page, I continue to design with the philosophy that when building an online
+          marketplace for digital art, art should be the focus of the user's attention. Like the
+          real-world experience of walking up to a piece of artwork that you find intriguing in the
+          gallery, I wanted the user to have a similar experience when selecting a specific piece of
+          artwork. On the art page, the user is able to see the artwork in much greater detail and
+          size. More relevant information such as detailed description, number of copies, past
+          ownership will also be displayed.
+        </p>
+        <ShenkiiImage id={14} />
+        <h5 className="helper-text">An artist's collection page</h5>
+        <p>
+          With the art page, I continue to design with the philosophy that when building an online
+          marketplace for digital art, art should be the focus of the user's attention. Like the
+          real-world experience of walking up to a piece of artwork that you find intriguing in the
+          gallery, I wanted the user to have a similar experience when selecting a specific piece of
+          artwork. On the art page, the user is able to see the artwork in much greater detail and
+          size. More relevant information such as detailed description, number of copies, past
+          ownership will also be displayed.
+        </p>
+        <ShenkiiImage id={15} />
+        <h5 className="helper-text">the user's collection page</h5>
+        <p>
+          With the art page, I continue to design with the philosophy that when building an online
+          marketplace for digital art, art should be the focus of the user's attention. Like the
+          real-world experience of walking up to a piece of artwork that you find intriguing in the
+          gallery, I wanted the user to have a similar experience when selecting a specific piece of
+          artwork. On the art page, the user is able to see the artwork in much greater detail and
+          size. More relevant information such as detailed description, number of copies, past
+          ownership will also be displayed.
+        </p>
+      </div>
+    </div>
+  );
+};
+
 const TechDecisions = () => {
   return (
     <div className="case-section">
-      <h1 className="case-subheading">make the user's life easier</h1>
+      <h1 className="case-subheading">make the web3 UX better</h1>
       <div className="case-text">
         <ShenkiiImage id={9} />
         <h5 className="helper-text">Traditional new user onboarding experience with Metamask</h5>
