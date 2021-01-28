@@ -25,6 +25,8 @@ export default () => {
     //     </Container>
     //   </section>
     // </>
-    <></>
+    <>
+      <h1>Hello Google</h1>
+    </>
   );
 };
