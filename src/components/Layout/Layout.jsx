@@ -34,7 +34,6 @@ const Layout = ({ children, location }) => {
   // Set the height of the body to the height of the scrolling div
   const setBodyHeight = () => {
     document.body.style.height = `${scrollContainer.current.getBoundingClientRect().height}px`;
-    console.log(size);
   };
 
   const [state, setState] = useState({

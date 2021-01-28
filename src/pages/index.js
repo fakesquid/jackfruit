@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 import { Helmet } from 'react-helmet';
 import App from '../components/App';
 import { headData } from '../mock/data';
@@ -7,6 +8,11 @@ import '../style/main.scss';
 
 export default () => {
   const lang = headData;
+
+  useEffect(() => {
+    ReactGA.initialize('G-LDC17Y77LK');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
     <>
