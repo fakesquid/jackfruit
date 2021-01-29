@@ -2,17 +2,27 @@ import React from 'react';
 import '../../style/main.scss';
 import ReactPlayer from 'react-player/lazy';
 
+import SideNav from '../../components/SideNav/SideNav';
 import UserPersonaImage from '../../components/Image/PersonaImg';
 import ShenkiiImage from '../../components/Image/ShenkiiImg';
 import Footer from '../../components/Footer/Footer';
-import collectionGIF from '../../images/shenkii/collection1.gif';
 
 const Shenkii = () => {
   return (
     <>
       <div className="case">
         <div className="case-title">
-          <h1>Building a better marketplace for Japanese art and doujinshi with Shenkii</h1>
+          <h1>
+            Building a better marketplace for Japanese art and{' '}
+            <a
+              href="https://en.wikipedia.org/wiki/Doujinshi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              doujinshi
+            </a>{' '}
+            with Shenkii
+          </h1>
           <h5>
             Timeline: <span className="case-details">October 2020 - Present</span>
           </h5>
@@ -26,6 +36,7 @@ const Shenkii = () => {
         <div className="case-banner">
           <ShenkiiImage id={1} />
         </div>
+
         <div className="case-body">
           <h2 className="case-heading">1.Research</h2>
           <TheProblem />
@@ -59,7 +70,7 @@ const TheProblem = () => {
           <br />
           <br />
           Being a form of art and publication, the same can be said for Japanese-styled art, manga,
-          and doujinshi (self-published art).
+          and doujinshi (Japanese self-published art).
         </p>
       </div>
     </div>
@@ -120,7 +131,9 @@ const Blockchain = () => {
 const TheSolution = () => {
   return (
     <div className="case-section">
-      <h1 className="case-subheading">the solution</h1>
+      <h1 className="case-subheading" id="solution">
+        the solution
+      </h1>
       <ShenkiiImage id={12} />
       <h5 className="helper-text">Current NFT marketplaces vs Shenkii</h5>
       <div className="case-text">

@@ -37,16 +37,10 @@ body,
 .container {
   flex-grow: 1;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0;
   position: relative;
   width: auto;
-  @media (max-width: 1024px) {
-    max-width: 960px;
-  }
-  @media (min-width: 1480px) {
-    max-width: 1400px;
-    padding: 0;
-  }
+  max-width: 80%;
   &.fluid {
     padding: 0;
     margin: 0;

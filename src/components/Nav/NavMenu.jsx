@@ -43,34 +43,6 @@ const Menu = ({ setMenuState, menuState }) => {
                       <Link to="/">HOME</Link>
                     </motion.span>
                   </li>
-                  {/* <li>
-                    <motion.span
-                      initial={{ y: 300, skewY: 40 }}
-                      animate={{
-                        y: 0,
-                        skewY: 0,
-                      }}
-                      exit={{ y: 300, skewY: 40 }}
-                      transition={{ delay: 0.1, ...transition }}
-                    >
-                      <Link to="/about">ABOUT</Link>
-                    </motion.span>
-                  </li> */}
-                  {/* <li>
-                    <motion.span
-                      initial={{ y: 300, skewY: 40 }}
-                      animate={{
-                        y: 0,
-                        skewY: 0,
-                      }}
-                      exit={{ y: 300, skewY: 40 }}
-                      transition={{ delay: 0.2, ...transition }}
-                    >
-                      <Link to="/cool" className="disabled">
-                        COOL
-                      </Link>
-                    </motion.span>
-                  </li> */}
                   <li>
                     <motion.span
                       initial={{ y: 300, skewY: 40 }}

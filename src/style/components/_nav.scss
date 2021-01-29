@@ -1,18 +1,16 @@
 header {
   position: absolute;
-  padding: 0 88px;
+  // padding: 0 88px;
   width: 100%;
   z-index: 99;
   @media (max-width: 768px) {
-    padding: 0 32px;
+    // padding: 0 32px;
   }
 
   .container-fluid {
     padding: 0;
     margin: auto;
-    @media (min-width: 1480px) {
-      max-width: 1400px;
-    }
+    max-width: 80%;
   }
   .header-inner {
     height: 120px;

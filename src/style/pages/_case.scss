@@ -1,46 +1,49 @@
 .case {
   padding-top: 10rem;
   position: relative;
-  // height: 3000px;
-  max-width: 1440px;
+  max-width: 80%;
   margin: auto;
+  @media (min-width: 1480px) {
+    max-width: 60%;
+  }
   .case-title {
     width: 100%;
-    margin: 0 32px;
     margin-bottom: 3rem;
     h1 {
       margin: 0 auto;
-      max-width: 80%;
       font-weight: 700;
       font-family: 'Jost', sans-serif;
       @media (max-width: 600px) {
-        font-size: 2em;
+        font-size: 2rem;
+        a {
+          font-size: 2rem;
+        }
       }
     }
     h5 {
       margin: 1.5rem auto;
-      max-width: 80%;
       color: #272635;
       .case-details {
         font-weight: 300;
       }
     }
+    a {
+      font-size: 4rem;
+      font-weight: 700;
+    }
   }
   .case-banner {
-    width: 75%;
     margin: auto;
     padding-bottom: 3rem;
   }
 
   .case-body {
     position: relative;
-    margin: 0 32px;
 
     .case-heading {
       background-color: #ff2149;
       padding: 12px 0 12px 12px;
       color: #f6f7f8;
-      width: 80%;
       margin: auto;
       margin-bottom: 3rem;
     }
@@ -48,7 +51,6 @@
     .case-section {
       margin: 0 auto;
       margin-bottom: 8rem;
-      max-width: 80%;
 
       .case-subheading {
         color: #ff2149;
