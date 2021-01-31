@@ -20,6 +20,27 @@ const Shenkii = () => {
   );
 };
 
+const Autodesk = () => {
+  return (
+    <div className="container">
+      <div className="project-inner">
+        <Card bgImage={require('../../images/autodesk_card.jpg')} />
+
+        <div className="project-details">
+          <h1 className="project-title">Autodesk</h1>
+          <h3>
+            Redesigning the animation of HIG Design System UIs to improve UX across Autodesk
+            products
+          </h3>
+          <Link className="project-link disabled" to="/work/autodesk">
+            Case Study Coming Soon
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Flashfood = () => {
   return (
     <div className="container">
@@ -109,7 +130,7 @@ const Projects = () => {
   return (
     <div className="projects">
       <Shenkii />
-      <Flashfood />
+      <Autodesk />
       <Travelwise />
       <PFC />
     </div>
