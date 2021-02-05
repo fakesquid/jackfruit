@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Card from '../Card/Card';
+import Tags from '../Tags/Tags';
 
 const Shenkii = () => {
+  const tags = ['Work', 'Design', 'Code'];
+
   return (
     <div className="container">
       <div className="project-inner">
@@ -10,6 +13,7 @@ const Shenkii = () => {
 
         <div className="project-details">
           <h1 className="project-title">Shenkii</h1>
+          <Tags tags={tags} />
           <h3>Building the future Web 3.0 marketplace for Manga, Doujinshi, and Anime art</h3>
           <Link className="project-link" to="/work/shenkii">
             Case Study
@@ -21,6 +25,8 @@ const Shenkii = () => {
 };
 
 const Autodesk = () => {
+  const tags = ['Work', 'Design', 'Code'];
+
   return (
     <div className="container">
       <div className="project-inner">
@@ -28,6 +34,7 @@ const Autodesk = () => {
 
         <div className="project-details">
           <h1 className="project-title">Autodesk</h1>
+          <Tags tags={tags} />
           <h3>
             Redesigning the animation of HIG Design System UIs to improve UX across Autodesk
             products
@@ -60,6 +67,8 @@ const Flashfood = () => {
 };
 
 const Travelwise = () => {
+  const tags = ['Volunteer', 'Code'];
+
   return (
     <div className="container">
       <div className="project-inner">
@@ -67,6 +76,7 @@ const Travelwise = () => {
 
         <div className="project-details">
           <h1 className="project-title">TravelWise</h1>
+          <Tags tags={tags} />
           <h3>
             A React web app for Waterloo Sustainable Region that help local companies coordinate
             carpools
@@ -94,6 +104,8 @@ const Travelwise = () => {
 };
 
 const PFC = () => {
+  const tags = ['Volunteer', 'Code'];
+
   return (
     <div className="container">
       <div className="project-inner">
@@ -103,6 +115,7 @@ const PFC = () => {
           <h1 className="project-title" id="PFC">
             Plastics for Change
           </h1>
+          <Tags tags={tags} />
           <h3>A React web app that manages and track the procurement of plastics</h3>
           <a
             className="project-link"
