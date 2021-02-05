@@ -67,7 +67,7 @@ const Flashfood = () => {
 };
 
 const Travelwise = () => {
-  const tags = ['Volunteer', 'Code'];
+  const tags = ['Blueprint', 'Volunteer', 'Code'];
 
   return (
     <div className="container">
@@ -104,7 +104,7 @@ const Travelwise = () => {
 };
 
 const PFC = () => {
-  const tags = ['Volunteer', 'Code'];
+  const tags = ['Blueprint', 'Volunteer', 'Code'];
 
   return (
     <div className="container">
