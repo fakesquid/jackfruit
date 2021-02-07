@@ -32,15 +32,21 @@ const Menu = ({ setMenuState, menuState }) => {
                 <motion.ul>
                   <li>
                     <motion.span
-                      initial={{ y: 300, skewY: 4 }}
+                      initial={{ y: 300, skewY: 40 }}
                       animate={{
                         y: 0,
                         skewY: 0,
                       }}
                       exit={{ y: 300, skewY: 40 }}
-                      transition={{ delay: 0, ...transition }}
+                      transition={{ delay: 0.3, ...transition }}
                     >
-                      <Link to="/">HOME</Link>
+                      <a
+                        href="https://drive.google.com/file/d/1VDax8m4E_eeFk0PQGXLtYKC9ArWUUarv/view?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        RESUME
+                      </a>
                     </motion.span>
                   </li>
                   <li>
