@@ -3,7 +3,7 @@ import React from 'react';
 const Headline = () => {
   return (
     <h1 className="main-headline">
-      <span className="hello">Hey I'm Jack!</span>
+      <span className="hello">Hey, I'm Jack!</span>
       <br />A <span className="bold1">UX Developer</span> and{' '}
       <span className="bold2">Product Designer</span> primarily working on UI/UX interfaces. Through
       design, I want to make the world a better place.
