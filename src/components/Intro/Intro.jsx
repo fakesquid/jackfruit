@@ -15,7 +15,7 @@ const Other = () => {
   return (
     <div className="others-banner">
       <div className="others-details">
-        Currently designing for the{' '}
+        Currently designing for{' '}
         <a
           className="others-title"
           href="https://www.distresscentre.com/"

@@ -14,7 +14,10 @@ const Shenkii = () => {
         <div className="project-details">
           <h1 className="project-title">Shenkii</h1>
           <Tags tags={tags} />
-          <h3>Building the future Web 3.0 marketplace for Manga, Doujinshi, and Anime art</h3>
+          <h3>
+            Building the future of digital marketplace for Manga, Doujinshi, and Anime art with
+            blockchain
+          </h3>
           <Link className="project-link" to="/work/shenkii">
             Case Study
           </Link>
@@ -78,7 +81,7 @@ const Travelwise = () => {
           <h1 className="project-title">TravelWise</h1>
           <Tags tags={tags} />
           <h3>
-            A React web app for Waterloo Sustainable Region that help local companies coordinate
+            A React web app for Waterloo Sustainable Region that helps local companies coordinate
             carpools
           </h3>
           <a
@@ -116,7 +119,10 @@ const PFC = () => {
             Plastics for Change
           </h1>
           <Tags tags={tags} />
-          <h3>A React web app that manages and track the procurement of plastics</h3>
+          <h3>
+            A React web for an India-based non-profit to manage and track the procurement of
+            plastics
+          </h3>
           <a
             className="project-link"
             href="https://www.plasticsforchange.org/"
