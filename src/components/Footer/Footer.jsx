@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="help">
           <h5>How can I help? </h5>
           <div className="socials">
-            <a className="first" href="mailto: aci.jack.zhang@gmail.com">
+            <a className="first" href="mailto: zj9zhang@uwaterloo.ca">
               <Email />
             </a>
             <a href="https://github.com/fakesquid" target="_blank" rel="noopener noreferrer">

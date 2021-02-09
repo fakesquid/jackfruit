@@ -59,7 +59,7 @@ const Menu = ({ setMenuState, menuState }) => {
                       exit={{ y: 300, skewY: 40 }}
                       transition={{ delay: 0.3, ...transition }}
                     >
-                      <a href="mailto: aci.jack.zhang@gmail.com">CONTACT</a>
+                      <a href="mailto: zj9zhang@uwaterloo.ca">CONTACT</a>
                     </motion.span>
                   </li>
                 </motion.ul>

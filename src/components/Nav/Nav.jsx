@@ -26,7 +26,7 @@ const Nav = ({ menuState, setMenuState }) => {
               RESUME
             </a>
 
-            <a href="mailto: aci.jack.zhang@gmail.com" className="nav-link">
+            <a href="mailto: zj9zhang@uwaterloo.ca" className="nav-link">
               CONTACT
             </a>
           </nav>
