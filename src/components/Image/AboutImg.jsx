@@ -1,41 +1,33 @@
+/* eslint-disable no-nested-ternary */
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import PropTypes from 'prop-types';
+import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-const AboutImg = ({ filename, alt }) => (
-  <StaticQuery
-    query={graphql`
-      query {
-        images: allFile {
-          edges {
-            node {
-              relativePath
-              name
-              childImageSharp {
-                fixed(width: 350, quality: 90) {
-                  ...GatsbyImageSharpFixed
-                }
-              }
-            }
+/*
+ * This component is built using `gatsby-image` to automatically serve optimized
+ * images with lazy loading and reduced file sizes. The image is loaded using a
+ * `useStaticQuery`, which allows us to load the image from directly within this
+ * component, rather than having to pass the image data down from pages.
+ *
+ * For more information, see the docs:
+ * - `gatsby-image`: https://gatsby.dev/gatsby-image
+ * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
+ */
+
+const AboutImage = ({ id }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      profile: file(relativePath: { eq: "about/Profile.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 430) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
-    `}
-    render={(data) => {
-      const image = data.images.edges.find((n) => n.node.relativePath.includes(filename));
+    }
+  `);
 
-      if (!image) return null;
-
-      const imageFixed = image.node.childImageSharp.fixed;
-      return <Img className="rounded shadow-lg" alt={alt} fixed={imageFixed} />;
-    }}
-  />
-);
-
-AboutImg.propTypes = {
-  filename: PropTypes.string,
-  alt: PropTypes.string,
+  return <>{id === 1 && <Img fluid={data.profile.childImageSharp.fluid} />}</>;
 };
 
-export default AboutImg;
+export default AboutImage;

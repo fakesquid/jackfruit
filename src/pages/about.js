@@ -1,32 +1,23 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
-import { Container } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Card from '../components/Card/Card';
+import AboutImage from '../components/Image/AboutImg';
 
-import { headData } from '../mock/data';
 import '../style/main.scss';
 
-export default () => {
-  const { lang } = headData;
-
+const About = () => {
   return (
-    // <>
-    //   <Helmet>
-    //     <meta charSet="utf-8" />
-    //     <title>Page not found</title>
-    //     <html lang={lang || 'en'} />
-    //     <meta name="description" content="Page not found" />
-    //   </Helmet>
-    //   <section id="hero" className="jumbotron">
-    //     <Container>
-    //       <h1>Hello there</h1>
-    //     </Container>
-    //   </section>
-    // </>
     <>
-      <h1>Hello Google</h1>
+      <div className="about-intro">
+        <AboutImage className="about-img" id={1} />
+        <div>
+          <h3>
+            Just when I thought that biotech would become my calling, my tendency to stay curious
+            led to the world of product design and software development.
+          </h3>
+        </div>
+      </div>
     </>
   );
 };
+
+export default About;

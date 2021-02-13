@@ -2,7 +2,6 @@ import React from 'react';
 import '../../style/main.scss';
 import ReactPlayer from 'react-player/lazy';
 
-import SideNav from '../../components/SideNav/SideNav';
 import UserPersonaImage from '../../components/Image/PersonaImg';
 import ShenkiiImage from '../../components/Image/ShenkiiImg';
 import Footer from '../../components/Footer/Footer';

@@ -17,6 +17,9 @@ const Nav = ({ menuState, setMenuState }) => {
           </Link>
 
           <nav>
+            {/* <Link to="/about" className="nav-link">
+              ABOUT
+            </Link> */}
             <a
               href="https://drive.google.com/file/d/1VDax8m4E_eeFk0PQGXLtYKC9ArWUUarv/view?usp=sharing"
               target="_blank"
