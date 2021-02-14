@@ -19,7 +19,7 @@ const AboutImage = ({ id }) => {
     query {
       profile: file(relativePath: { eq: "about/Profile.png" }) {
         childImageSharp {
-          fluid(maxWidth: 430) {
+          fluid(maxWidth: 600) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -27,7 +27,15 @@ const AboutImage = ({ id }) => {
     }
   `);
 
-  return <>{id === 1 && <Img fluid={data.profile.childImageSharp.fluid} />}</>;
+  return (
+    <>
+      {id === 1 && (
+        <div className="about-img">
+          <Img fluid={data.profile.childImageSharp.fluid} />
+        </div>
+      )}
+    </>
+  );
 };
 
 export default AboutImage;

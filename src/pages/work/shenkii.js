@@ -103,7 +103,7 @@ const Blockchain = () => {
           ownership can be proved.
           <br />
           <br />
-          However, most blockchain art marketplaces are generic, lack control for the artist, and
+          However, most blockchain art marketplaces were generic, lacked control for the artist, and
           due to the nature of{' '}
           <a
             href="https://medium.com/l4-media/making-sense-of-web-3-c1a9e74dcae"
@@ -112,7 +112,7 @@ const Blockchain = () => {
           >
             web3
           </a>
-          , lack the{' '}
+          , lacked the{' '}
           <a
             href="https://ethereum.org/en/developers/docs/web2-vs-web3/#web3-limitations"
             target="_blank"
