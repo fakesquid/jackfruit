@@ -32,17 +32,22 @@
       }
     }
   }
-}
 
-p {
-  font-size: 1.5rem;
-  @media (max-width: 600px) {
-    font-size: 1rem;
+  .details-bold {
+    font-weight: 600;
   }
-}
 
-h1 {
-  @media (max-width: 600px) {
-    font-size: 2rem;
+  p,
+  a {
+    font-size: 1.2rem;
+    @media (max-width: 600px) {
+      font-size: 1rem;
+    }
+  }
+
+  h1 {
+    @media (max-width: 600px) {
+      font-size: 2rem;
+    }
   }
 }
