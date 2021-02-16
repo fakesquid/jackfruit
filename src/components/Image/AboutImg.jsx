@@ -24,15 +24,123 @@ const AboutImage = ({ id }) => {
           }
         }
       }
+      singapore1: file(relativePath: { eq: "about/singapore1.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      seoul1: file(relativePath: { eq: "about/seoul1.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      seoul2: file(relativePath: { eq: "about/seoul2.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      seoul3: file(relativePath: { eq: "about/seoul3.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      nice1: file(relativePath: { eq: "about/nice1.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      huashan1: file(relativePath: { eq: "about/huashan1.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      food1: file(relativePath: { eq: "about/food1.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      food2: file(relativePath: { eq: "about/food2.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      food3: file(relativePath: { eq: "about/food3.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      food4: file(relativePath: { eq: "about/food4.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      food5: file(relativePath: { eq: "about/food5.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      food6: file(relativePath: { eq: "about/food6.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `);
 
   return (
     <>
-      {id === 1 && (
+      {id === 1 ? (
         <div className="about-img">
           <Img fluid={data.profile.childImageSharp.fluid} />
         </div>
+      ) : id === 2 ? (
+        <Img fluid={data.seoul1.childImageSharp.fluid} />
+      ) : id === 3 ? (
+        <Img fluid={data.singapore1.childImageSharp.fluid} />
+      ) : id === 4 ? (
+        <Img fluid={data.seoul2.childImageSharp.fluid} />
+      ) : id === 5 ? (
+        <Img fluid={data.seoul3.childImageSharp.fluid} />
+      ) : id === 6 ? (
+        <Img fluid={data.huashan1.childImageSharp.fluid} />
+      ) : id === 7 ? (
+        <Img fluid={data.nice1.childImageSharp.fluid} />
+      ) : id === 8 ? (
+        <Img fluid={data.food1.childImageSharp.fluid} />
+      ) : id === 9 ? (
+        <Img fluid={data.food2.childImageSharp.fluid} />
+      ) : id === 10 ? (
+        <Img fluid={data.food3.childImageSharp.fluid} />
+      ) : id === 11 ? (
+        <Img fluid={data.food4.childImageSharp.fluid} />
+      ) : id === 12 ? (
+        <Img fluid={data.food5.childImageSharp.fluid} />
+      ) : (
+        <Img fluid={data.food6.childImageSharp.fluid} />
       )}
     </>
   );

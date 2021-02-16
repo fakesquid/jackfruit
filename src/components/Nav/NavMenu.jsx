@@ -31,6 +31,9 @@ const Menu = ({ setMenuState, menuState }) => {
               <motion.div className="menu-inner">
                 <motion.ul>
                   <li>
+                    <Link to="/about">ABOUT</Link>
+                  </li>
+                  <li>
                     <motion.span
                       initial={{ y: 300, skewY: 40 }}
                       animate={{
