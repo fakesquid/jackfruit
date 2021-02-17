@@ -13,7 +13,7 @@ const Card = ({ bgImage }) => {
   }));
   return (
     <animated.div
-      className="card"
+      className="project-card"
       onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
       onMouseLeave={() => set({ xys: [0, 0, 1] })}
       style={{
