@@ -1,4 +1,41 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const StyledTags = styled.div`
+  ul {
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 1rem;
+      margin-bottom: 0.5rem;
+      color: #f8f8f8;
+      font-weight: 700;
+
+      // Default Tag Color
+      background: #272635;
+    }
+
+    .tag {
+      padding: 0.3rem 1rem;
+      border-radius: 3px;
+    }
+
+    // Custom Tag Colors
+    .Volunteer {
+      background: #f3a39e;
+    }
+    .Blueprint {
+      background: #0078e8;
+    }
+    .Code {
+      background: #fdb927;
+    }
+    .Design {
+      background: #65bf73;
+    }
+  }
+`;
 
 const ListTags = (props) => {
   const { value } = props;
@@ -8,21 +45,14 @@ const ListTags = (props) => {
 const Tags = (props) => {
   const { tags } = props;
 
-  const tagColor = (n) => {
-    const colors = ['dark', 'pink', 'blue', 'yellow', 'green'];
-    return colors[n];
-  };
-
   return (
-    <div className={`tag ${tagColor}`}>
-      <div className="tag-text">
-        <ul>
-          {tags.map((tag) => (
-            <ListTags key={tag.toString()} value={tag} />
-          ))}
-        </ul>
-      </div>
-    </div>
+    <StyledTags>
+      <ul>
+        {tags.map((tag) => (
+          <ListTags key={tag.toString()} value={tag} />
+        ))}
+      </ul>
+    </StyledTags>
   );
 };
 
