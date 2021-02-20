@@ -59,7 +59,10 @@ const Pictures = () => {
   return (
     <div className="pictures">
       <h1 className="pictures-heading">When I’m not working,</h1>
-      <h3 className="pictures-subheading">I sometimes fly around the world.</h3>
+      <div className="pictures-subheading">
+        <h3>I sometimes fly around the world.</h3>
+        <hr className="subheading-line" />
+      </div>
       <div className="pictures-grid">
         <AboutImage id={2} />
         <AboutImage id={3} />
@@ -68,7 +71,10 @@ const Pictures = () => {
         <AboutImage id={6} />
         <AboutImage id={7} />
       </div>
-      <h3 className="pictures-subheading">I sometimes go on food adventures!</h3>
+      <div className="pictures-subheading">
+        <h3>I sometimes go on food adventures!</h3>
+        <hr className="subheading-line" />
+      </div>
       <div className="pictures-grid">
         <AboutImage id={8} />
         <AboutImage id={9} />
