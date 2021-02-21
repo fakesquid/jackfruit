@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { useSpring, animated } from 'react-spring';
+import PropTypes from 'prop-types';
 import './styles.scss';
 
 const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1];
@@ -17,11 +17,17 @@ const Card = ({ bgImage }) => {
       onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
       onMouseLeave={() => set({ xys: [0, 0, 1] })}
       style={{
+        // eslint-disable-next-line react/destructuring-assignment
         transform: props.xys.interpolate(trans),
         backgroundImage: `url(${bgImage})`,
       }}
     />
   );
+};
+
+Card.propTypes = {
+  bgImage: PropTypes.string.isRequired,
+  xys: PropTypes.arrayOf(PropTypes.number).isRequired,
 };
 
 export default Card;

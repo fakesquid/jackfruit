@@ -1,4 +1,7 @@
 module.exports = {
+  flags: {
+    DEV_SSR: false,
+  },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
