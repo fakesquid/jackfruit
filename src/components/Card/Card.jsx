@@ -27,7 +27,7 @@ const Card = ({ bgImage }) => {
 
 Card.propTypes = {
   bgImage: PropTypes.string.isRequired,
-  xys: PropTypes.arrayOf(PropTypes.number).isRequired,
+  xys: PropTypes.arrayOf(PropTypes.number),
 };
 
 export default Card;
