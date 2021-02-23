@@ -2,6 +2,8 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import { motion } from 'framer-motion';
+import PropTypes from 'prop-types';
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -111,6 +113,8 @@ const AboutImage = ({ id }) => {
     }
   `);
 
+  const scale = 1.2;
+
   return (
     <>
       {id === 1 ? (
@@ -118,32 +122,60 @@ const AboutImage = ({ id }) => {
           <Img fluid={data.profile.childImageSharp.fluid} />
         </div>
       ) : id === 2 ? (
-        <Img fluid={data.seoul1.childImageSharp.fluid} />
+        <motion.div whileHover={{ scale }}>
+          <Img fluid={data.seoul1.childImageSharp.fluid} />
+        </motion.div>
       ) : id === 3 ? (
-        <Img fluid={data.singapore1.childImageSharp.fluid} />
+        <motion.div whileHover={{ scale }}>
+          <Img fluid={data.singapore1.childImageSharp.fluid} />
+        </motion.div>
       ) : id === 4 ? (
-        <Img fluid={data.seoul2.childImageSharp.fluid} />
+        <motion.div whileHover={{ scale }}>
+          <Img fluid={data.seoul2.childImageSharp.fluid} />
+        </motion.div>
       ) : id === 5 ? (
-        <Img fluid={data.seoul3.childImageSharp.fluid} />
+        <motion.div whileHover={{ scale }}>
+          <Img fluid={data.seoul3.childImageSharp.fluid} />
+        </motion.div>
       ) : id === 6 ? (
-        <Img fluid={data.huashan1.childImageSharp.fluid} />
+        <motion.div whileHover={{ scale }}>
+          <Img fluid={data.huashan1.childImageSharp.fluid} />
+        </motion.div>
       ) : id === 7 ? (
-        <Img fluid={data.nice1.childImageSharp.fluid} />
+        <motion.div whileHover={{ scale }}>
+          <Img fluid={data.nice1.childImageSharp.fluid} />
+        </motion.div>
       ) : id === 8 ? (
-        <Img fluid={data.food1.childImageSharp.fluid} />
+        <motion.div whileHover={{ scale }}>
+          <Img fluid={data.food1.childImageSharp.fluid} />
+        </motion.div>
       ) : id === 9 ? (
-        <Img fluid={data.food2.childImageSharp.fluid} />
+        <motion.div whileHover={{ scale }}>
+          <Img fluid={data.food2.childImageSharp.fluid} />
+        </motion.div>
       ) : id === 10 ? (
-        <Img fluid={data.food3.childImageSharp.fluid} />
+        <motion.div whileHover={{ scale }}>
+          <Img fluid={data.food3.childImageSharp.fluid} />
+        </motion.div>
       ) : id === 11 ? (
-        <Img fluid={data.food4.childImageSharp.fluid} />
+        <motion.div whileHover={{ scale }}>
+          <Img fluid={data.food4.childImageSharp.fluid} />
+        </motion.div>
       ) : id === 12 ? (
-        <Img fluid={data.food5.childImageSharp.fluid} />
+        <motion.div whileHover={{ scale }}>
+          <Img fluid={data.food5.childImageSharp.fluid} />
+        </motion.div>
       ) : (
-        <Img fluid={data.food6.childImageSharp.fluid} />
+        <motion.div whileHover={{ scale }}>
+          <Img fluid={data.food6.childImageSharp.fluid} />
+        </motion.div>
       )}
     </>
   );
+};
+
+AboutImage.propTypes = {
+  id: PropTypes.number,
 };
 
 export default AboutImage;
