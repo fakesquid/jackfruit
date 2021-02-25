@@ -249,8 +249,8 @@ const Userflow = () => {
           >
             decentralized
           </a>{' '}
-          platform, or what values it offers. Many users may be unfamiliar with the term "wallet" in
-          the{' '}
+          platform, or what values it offers. Many users may be unfamiliar with the term
+          &quot;wallet&quot; in the{' '}
           <a
             href="https://ethereum.org/en/developers/docs/web2-vs-web3/#practical-comparisons"
             target="_blank"
@@ -258,15 +258,16 @@ const Userflow = () => {
           >
             web3
           </a>{' '}
-          context and may be wondering why there isn't a way for them to create an account.
+          context and may be wondering why there isn&apos;t a way for them to create an account.
         </p>
         <br />
         <p>
-          These are valid confusions and frustrations that the user would have if it's their first
-          time interacting with a decentralized platform built on top of the blockchain. That's why
-          when I designed the user flow of our platform, I took careful consideration into how I can
-          make the onboarding experience for new users better. I took the experience from our team's
-          first time with blockchain, and build the guidance that I wish were there at the time.
+          These are valid confusions and frustrations that the user would have if it&apos;s their
+          first time interacting with a decentralized platform built on top of the blockchain.
+          That&apos;s why when I designed the user flow of our platform, I took careful
+          consideration into how I can make the onboarding experience for new users better. I took
+          the experience from our team&apos;s first time with blockchain, and build the guidance
+          that I wish were there at the time.
         </p>
         <br />
         <h3>Key designs of the user flow</h3>
@@ -292,7 +293,17 @@ const Marketplace = () => {
       <h1 className="case-subheading">designing the marketplace</h1>
       <div className="case-text">
         <ShenkiiImage id={5} />
-        <h5 className="helper-text">Inspiration of the marketplace design</h5>
+        <h5 className="helper-text">
+          Inspiration of the marketplace design (
+          <a
+            href="https://blooloop.com/museum/in-depth/josh-muir-bendigo-art-gallery/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            source
+          </a>
+          )
+        </h5>
 
         <ShenkiiImage id={3} />
         <h5 className="helper-text">Marketplace / wallet not connected</h5>
@@ -303,9 +314,9 @@ const Marketplace = () => {
         <p>
           Different from traditional e-commerce marketplaces such as Amazon, a marketplace for art
           should be a visual-first exploratory experience. I wanted the user to experience the
-          feeling of going to an art gallery, not a marketplace. Instead of cluttering the user's
-          view with competing prices and endless options, I wanted the users to have their focus on
-          appreciating the art.
+          feeling of going to an art gallery, not a marketplace. Instead of cluttering the
+          user&apos;s view with competing prices and endless options, I wanted the users to have
+          their focus on appreciating the art.
         </p>
         <br />
         <p>
@@ -330,12 +341,12 @@ const ArtPage = () => {
         <h5 className="helper-text">Past iterations of the Art page</h5>
         <p>
           With the art page, I continue to design with the philosophy that when building an online
-          marketplace for digital art, art should be the focus of the user's attention. Like the
-          real-world experience of walking up to a piece of artwork that you find intriguing in the
-          gallery, I wanted the user to have a similar experience when selecting a specific piece of
-          artwork. On the art page, the user is able to see the artwork in much greater detail and
-          size. More relevant information such as detailed description, number of copies, past
-          ownership will also be displayed.
+          marketplace for digital art, art should be the focus of the user&apos;s attention. Like
+          the real-world experience of walking up to a piece of artwork that you find intriguing in
+          the gallery, I wanted the user to have a similar experience when selecting a specific
+          piece of artwork. On the art page, the user is able to see the artwork in much greater
+          detail and size. More relevant information such as detailed description, number of copies,
+          past ownership will also be displayed.
         </p>
         <br />
         <p>
@@ -355,38 +366,32 @@ const Collection = () => {
       <h1 className="case-subheading">collecting can be social</h1>
       <div className="case-text">
         <div className="gif-wrapper">
-          <ReactPlayer
-            url="https://vimeo.com/505119430"
-            playing={true}
-            loop={true}
-            controls={false}
-            muted={true}
-          />
+          <ReactPlayer url="https://vimeo.com/505119430" playing loop controls={false} muted />
         </div>
-        <h5 className="helper-text">Another user's collection page</h5>
+        <h5 className="helper-text">Another user&apos;s collection page</h5>
         <p>
-          From my user research, an important insight that I've collected was that the users feel
-          that it's important for them to be able to showcase their collection to other people. With
-          that in mind, I thought it would make sense to design a layer of rich social features on
-          top of the barebone collection page. To keep the experience familiar, I designed a social
-          sidebar with influence from Instagram and Twitter. The sidebar has its position fixed when
-          scrolling so that it remains a point of interest while the user scrolls through the
-          collection. I wanted the collector to be able to tell their stories. When the user wants
-          to make a connection to the story or follow the collector, it can be done easily. An
-          improvement that I would want to add on top of this would be the option to discover and
-          showcase art to like-minded individuals.
+          From my user research, an important insight that I&apos;ve collected was that the users
+          feel that it&apos;s important for them to be able to showcase their collection to other
+          people. With that in mind, I thought it would make sense to design a layer of rich social
+          features on top of the barebone collection page. To keep the experience familiar, I
+          designed a social sidebar with influence from Instagram and Twitter. The sidebar has its
+          position fixed when scrolling so that it remains a point of interest while the user
+          scrolls through the collection. I wanted the collector to be able to tell their stories.
+          When the user wants to make a connection to the story or follow the collector, it can be
+          done easily. An improvement that I would want to add on top of this would be the option to
+          discover and showcase art to like-minded individuals.
         </p>
         <ShenkiiImage id={14} />
-        <h5 className="helper-text">An artist's collection page</h5>
+        <h5 className="helper-text">An artist&apos;s collection page</h5>
         <p>
           If the user has created artworks before, their social sidebar on the collection page
-          changes to reflect that. Once the user's role gets upgraded to an artist, additional tools
-          and features are provided. One of the features that we want to implement in the future is
-          Commission. An insight that I learned from the research was that users like the
-          artwork/doujinshi more if it's personally made for them.
+          changes to reflect that. Once the user&apos;s role gets upgraded to an artist, additional
+          tools and features are provided. One of the features that we want to implement in the
+          future is Commission. An insight that I learned from the research was that users like the
+          artwork/doujinshi more if it&apos;s personally made for them.
         </p>
         <ShenkiiImage id={15} />
-        <h5 className="helper-text">the user's collection page</h5>
+        <h5 className="helper-text">the user&apos;s collection page</h5>
         <p>
           To add a little incentive for the users to create and collect more artworks, I added
           flairs in the social sidebar to showcase their progression. As the user collects and/or
@@ -403,9 +408,21 @@ const TechDecisions = () => {
       <h1 className="case-subheading">make the web3 UX better</h1>
       <div className="case-text">
         <ShenkiiImage id={9} />
-        <h5 className="helper-text">Traditional new user onboarding experience with Metamask</h5>
+        <h5 className="helper-text">
+          Traditional new user onboarding experience with Metamask (
+          <a href="https://medium.com/@_seanli" target="_blank" rel="noopener noreferrer">
+            source
+          </a>
+          )
+        </h5>
         <ShenkiiImage id={10} />
-        <h5 className="helper-text">New user onboarding experience with Fortmatic</h5>
+        <h5 className="helper-text">
+          New user onboarding experience with Fortmatic (
+          <a href="https://medium.com/@_seanli" target="_blank" rel="noopener noreferrer">
+            source
+          </a>
+          )
+        </h5>
         <p>
           Due to the nature of web3, traditional user experience with onboarding to a decentralized
           app would require many steps and blockchain software that may not be intuitive to
@@ -417,8 +434,8 @@ const TechDecisions = () => {
         <h5 className="helper-text">Fortmatic wallet modal</h5>
         <p>
           By using Fortmatic, the developer experience was simplified too. Instead of worrying about
-          the UIs of how users will connect to their wallets, Fortmatic's login modal can simplify
-          and save development time, which is crucial in a small and lean team.
+          the UIs of how users will connect to their wallets, Fortmatic&apos;s login modal can
+          simplify development and save time, which is crucial in a small and lean team.
         </p>
       </div>
     </div>
@@ -434,8 +451,8 @@ const NextSteps = () => {
           As Shenkii is currently still in active design and development, I anticipate the platform
           to continue to evolve with more feedback and research. Most of the decisions made with the
           design were based on the insights that we have gathered through speaking with our users
-          and researching the current market. While our team's current focus is on implement the
-          backend, I aim to conduct further usability tests on my design decisions.
+          and researching the current market. While our team&apos;s current focus is on implement
+          the backend, I aim to conduct further usability tests on my design decisions.
         </p>
         <br />
         <p>

@@ -1,18 +1,15 @@
 @import './abstracts/mixins';
 @import './abstracts/variables';
-// @import './abstracts/helpers';
 
 @import './base/base';
 @import './base/typography';
 
-// @import './components/buttons';
 @import './components/nav';
 @import './components/intro';
 @import './components/navmenu';
 @import './components/sidenav';
 
 @import './layout/footer';
-// @import './layout/sections';
 
 @import './sections/about';
 @import './sections/projects';

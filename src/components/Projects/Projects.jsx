@@ -3,13 +3,18 @@ import { Link } from 'gatsby';
 import Card from '../Card/Card';
 import Tags from '../Tags/Tags';
 
+import ShenkiiCardImg from '../../images/shenkii_card.jpg';
+import AutodeskCardImg from '../../images/autodesk_card.jpg';
+import TravelwiseCardImg from '../../images/travelwise_card.jpg';
+import PFCCardImg from '../../images/pfc.jpg';
+
 const Shenkii = () => {
   const tags = ['Work', 'Design', 'Code'];
 
   return (
     <div className="container">
       <div className="project-inner">
-        <Card bgImage={require('../../images/shenkii_card.jpg')} />
+        <Card bgImage={ShenkiiCardImg} />
 
         <div className="project-details">
           <h1 className="project-title">Shenkii</h1>
@@ -33,7 +38,7 @@ const Autodesk = () => {
   return (
     <div className="container">
       <div className="project-inner">
-        <Card bgImage={require('../../images/autodesk_card.jpg')} />
+        <Card bgImage={AutodeskCardImg} />
 
         <div className="project-details">
           <h1 className="project-title">Autodesk</h1>
@@ -51,31 +56,13 @@ const Autodesk = () => {
   );
 };
 
-const Flashfood = () => {
-  return (
-    <div className="container">
-      <div className="project-inner">
-        <Card bgImage={require('../../images/flashfood_card.jpg')} />
-
-        <div className="project-details">
-          <h1 className="project-title">Flashfood</h1>
-          <h3>Designing a better refund flow for vendors and users</h3>
-          <Link className="project-link disabled" to="/work/flashfood">
-            Case Study Coming Soon
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
-};
-
 const Travelwise = () => {
   const tags = ['Blueprint', 'Volunteer', 'Code'];
 
   return (
     <div className="container">
       <div className="project-inner">
-        <Card bgImage={require('../../images/travelwise_card.jpg')} />
+        <Card bgImage={TravelwiseCardImg} />
 
         <div className="project-details">
           <h1 className="project-title">TravelWise</h1>
@@ -112,7 +99,7 @@ const PFC = () => {
   return (
     <div className="container">
       <div className="project-inner">
-        <Card bgImage={require('../../images/pfc.jpg')} />
+        <Card bgImage={PFCCardImg} />
 
         <div className="project-details">
           <h1 className="project-title" id="PFC">
