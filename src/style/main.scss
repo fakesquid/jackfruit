@@ -15,3 +15,11 @@
 @import './sections/projects';
 
 @import './pages/case'; // @import './vendor/css/font-awesome.min.css';
+
+// Need to load local fonts here; Used with Personal License
+@font-face {
+  font-family: 'Migra-Regular';
+  src: local('Migra-Regular'), url('../fonts/Migra-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
