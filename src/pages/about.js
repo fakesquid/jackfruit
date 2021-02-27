@@ -22,24 +22,28 @@ const AboutIntro = () => {
     <div className="about-intro">
       <AboutImage id={1} />
       <div className="about-details">
-        <h1>Aim for the moon, and shoot for the stars.</h1>
+        <h1>Hey, I&apos;m Jack.</h1>
         <p>
-          Hey there! I’m Jack, a self-taught UX developer and product designer studying biotech at
-          the University of Waterloo. Previously, I've interned at Autodesk, Hubba, Flashfood, TD,
-          and NUS in product design and software development.{' '}
+          A self-taught UX developer and product designer studying biotech at the University of
+          Waterloo.
+        </p>
+        <p>
+          Previously, I&apos;ve interned at Autodesk, Hubba, Flashfood, TD, and NUS in product
+          design and software development.{' '}
           <span className="details-bold">
-            Currently, I'm looking for frontend development or product design opportunities!
+            Currently, I&apos;m looking for full-time frontend development or product design
+            opportunities!
           </span>
         </p>
         <p>
-          I'm passionate about solving problems with technology to make the world a better place.
-          Initially, I pursued biotech because I was intrigued by mycelium's potential to replace
-          plastics. However, my curiosity in technology led me to discover product design and
-          software development through various hackathons.
+          I&apos;m passionate about solving problems with technology to make the world a better
+          place. Initially, I pursued biotech because I was intrigued by mycelium&apos;s potential
+          to replace plastics. However, my curiosity in technology led me to discover product design
+          and software development through various hackathons.
         </p>
         <p>
           I care deeply about making a positive social impact and take every opportunity that I can
-          to do so. Since 2019, I've been volunteering for{' '}
+          to do so. Since 2019, I&apos;ve been volunteering for{' '}
           <a
             className="others-title"
             href="https://uwblueprint.org/"
