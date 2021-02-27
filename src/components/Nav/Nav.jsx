@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { Container } from 'react-bootstrap';
 import { Link } from 'gatsby';
 import { useLocation } from '@reach/router';
@@ -13,9 +14,8 @@ const Nav = ({ menuState, setMenuState }) => {
       <Container fluid>
         <div className="header-inner">
           <Link to="/" className="nav-link">
-            HOME
+            JACK
           </Link>
-
           <nav>
             <Link to="/about" className="nav-link">
               ABOUT
@@ -33,14 +33,20 @@ const Nav = ({ menuState, setMenuState }) => {
               CONTACT
             </a>
           </nav>
+          {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events */}
           <div onClick={() => setMenuState(!menuState)} className="hamburger-menu">
-            <span></span>
-            <span></span>
+            <span />
+            <span />
           </div>
         </div>
       </Container>
     </header>
   );
+};
+
+Nav.propTypes = {
+  menuState: PropTypes.bool,
+  setMenuState: PropTypes.func,
 };
 
 export default Nav;

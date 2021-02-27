@@ -3,10 +3,10 @@ import React from 'react';
 const Headline = () => {
   return (
     <h1 className="main-headline">
-      <span className="hello">Hey, I'm Jack!</span>
-      <br />A <span className="bold1">UX Developer</span> and{' '}
-      <span className="bold2">Product Designer</span>. Through design, I want to make the world a
-      better place.
+      <span className="italic">UX Developer</span> and{' '}
+      <span className="italic">Product Designer</span>.
+      <br />
+      Through technology, I want to help people solve problems and make the world a better place.
     </h1>
   );
 };

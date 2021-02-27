@@ -3,29 +3,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;900&display=swap');
 
+// Used with Personal License
+@font-face {
+  font-family: 'Migra-Regular';
+  src: local('Migra-Regular'), url('../fonts/Migra-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MigraItalic-Italic';
+  src: local('MigraItalic-Italic'), url('../fonts/MigraItalic-Italic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NeueMachina-Regular';
+  src: local('NeueMachina-Regular'), url('../fonts/NeueMachina-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1 {
   font-family: Migra-Regular, serif;
   font-size: $big-font-size;
 }
 
 h2 {
-  font-weight: 700;
-  font-family: 'Jost', sans-serif;
+  font-family: NeueMachina-Regular, monospace;
   font-size: $mid-font-size;
 }
 
 h3 {
-  font-weight: 500;
-  font-family: 'Jost', sans-serif;
+  font-family: NeueMachina-Regular, monospace;
   font-size: $mid-font-size;
 }
 
 p,
 a,
 ul {
-  font-family: 'Jost', sans-serif;
+  font-family: NeueMachina-Regular, monospace;
   font-size: $default-font-size;
-  font-weight: 400;
   color: $text;
 }
 
