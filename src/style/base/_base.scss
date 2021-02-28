@@ -7,8 +7,7 @@ html {
 body {
   color: $text;
   background: #f8f8f8;
-  overflow-x: hidden;
-  overscroll-behavior-y: none;
+  overflow: auto;
 }
 
 * {
@@ -22,12 +21,10 @@ body,
 }
 
 .app {
-  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  overflow: hidden;
 
   .smooth-scroll {
     padding-bottom: 2rem;
