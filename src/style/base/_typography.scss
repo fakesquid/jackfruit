@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;900&display=swap');
 
 // Used with Personal License
@@ -23,19 +21,34 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'NeueMachina-Ultrabold';
+  src: local('NeueMachina-Ultrabold'), url('../fonts/NeueMachina-Ultrabold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Agrandir-GrandHeavy';
+  src: local('Agrandir-GrandHeavy'),
+    url('../fonts/projects/Agrandir-GrandHeavy.otf') format('opentype');
+}
+
 h1 {
   font-family: Migra-Regular, serif;
   font-size: $big-font-size;
 }
 
 h2 {
-  font-family: NeueMachina-Regular, monospace;
+  font-family: NeueMachina-Ultrabold, monospace;
   font-size: $mid-font-size;
 }
 
 h3 {
   font-family: NeueMachina-Regular, monospace;
   font-size: $mid-font-size;
+}
+
+h5 {
+  font-family: NeueMachina-Ultrabold, monospace;
 }
 
 p,
