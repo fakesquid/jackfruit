@@ -29,7 +29,7 @@ const AboutIntro = () => {
         </p>
         <p>
           Previously, I&apos;ve interned at Autodesk, Hubba, Flashfood, TD, and NUS in product
-          design and software development.{' '}
+          design and software development. <br />
           <span className="details-bold">
             Currently, I&apos;m looking for full-time frontend development or product design
             opportunities!
