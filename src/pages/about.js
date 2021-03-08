@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import AboutImage from '../components/Image/AboutImg';
 import Footer from '../components/Footer/Footer';
@@ -18,6 +18,17 @@ const About = () => {
 };
 
 const AboutIntro = () => {
+  const [currentTrack, setCurrentTrack] = useState({});
+
+  useEffect(() => {
+    fetch('https://jackfruit-api.vercel.app/api/now-playing')
+      .then((res) => res.json())
+      .then((res) => setCurrentTrack(res))
+      .catch((e) => console.error(e));
+  });
+
+  console.log(currentTrack);
+
   return (
     <div className="about-intro">
       <AboutImage id={1} />
@@ -54,6 +65,11 @@ const AboutIntro = () => {
           </a>
           , a student-led team that builds technology for nonprofits.
         </p>
+        {currentTrack && (
+          <p>
+            Currently playing {currentTrack.track} by {currentTrack.artist}
+          </p>
+        )}
       </div>
     </div>
   );
