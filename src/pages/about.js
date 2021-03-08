@@ -21,13 +21,11 @@ const AboutIntro = () => {
   const [currentTrack, setCurrentTrack] = useState({});
 
   useEffect(() => {
-    fetch('https://jackfruit-api.vercel.app/api/now-playing')
+    fetch('https://jackfruit-api-fakesquid.vercel.app/api/now-playing')
       .then((res) => res.json())
       .then((res) => setCurrentTrack(res))
       .catch((e) => console.error(e));
   });
-
-  console.log(currentTrack);
 
   return (
     <div className="about-intro">
@@ -65,9 +63,9 @@ const AboutIntro = () => {
           </a>
           , a student-led team that builds technology for nonprofits.
         </p>
-        {currentTrack && (
+        {currentTrack.track && (
           <p>
-            Currently playing {currentTrack.track} by {currentTrack.artist}
+            Currently listening to {currentTrack.track} by {currentTrack.artist}
           </p>
         )}
       </div>
