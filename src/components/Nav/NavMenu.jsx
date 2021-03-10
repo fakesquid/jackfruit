@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
 
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -44,7 +45,7 @@ const Menu = ({ setMenuState, menuState }) => {
                       transition={{ delay: 0.3, ...transition }}
                     >
                       <a
-                        href="https://drive.google.com/file/d/1WHYrYZJnQ-HCAdD9lz0TUX2vJIs4ql1H/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1tZVOIVHtNf_q7W-mjuwPvMltglmgDIpZ/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -73,6 +74,11 @@ const Menu = ({ setMenuState, menuState }) => {
       </AnimatePresence>
     </>
   );
+};
+
+Menu.propTypes = {
+  setMenuState: PropTypes.func.isRequired,
+  menuState: PropTypes.bool.isRequired,
 };
 
 export default Menu;
