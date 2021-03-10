@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import AboutImage from '../components/Image/AboutImg';
 import Footer from '../components/Footer/Footer';
+import Age from '../components/Age/Age';
 
 import '../style/main.scss';
 
@@ -32,9 +33,15 @@ const AboutIntro = () => {
       <AboutImage id={1} />
       <div className="about-details">
         <h1>Hey, I&apos;m Jack.</h1>
+        <Age />
+        {currentTrack.track && (
+          <p>
+            Currently listening to {currentTrack.track} by {currentTrack.artist}
+          </p>
+        )}
         <p>
-          A self-taught UX developer and product designer studying biotech at the University of
-          Waterloo.
+          I&apos;m a self-taught UX developer and product designer studying biotech at the
+          University of Waterloo.
         </p>
         <p>
           Previously, I&apos;ve interned at Autodesk, Hubba, Flashfood, TD, and NUS in product
@@ -63,11 +70,6 @@ const AboutIntro = () => {
           </a>
           , a student-led team that builds technology for nonprofits.
         </p>
-        {currentTrack.track && (
-          <p>
-            Currently listening to {currentTrack.track} by {currentTrack.artist}
-          </p>
-        )}
       </div>
     </div>
   );
