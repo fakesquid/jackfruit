@@ -24,9 +24,9 @@ const Menu = ({ setMenuState, menuState }) => {
               exit={{ opacity: 0 }}
               transition={{ duration: 1, ...transition }}
               onClick={() => setMenuState(!menuState)}
-              className="close"
+              className="close-button"
             >
-              CLOSE
+              X
             </motion.div>
             <div className="container">
               <motion.div className="menu-inner">
