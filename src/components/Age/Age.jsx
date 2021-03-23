@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 // Inspired by the Age counter from Ryo.lu, implemented with Hooks
 
 const currentAge = () => {
-  return ((Date.now() - 890633700000) / 31556908800).toFixed(20);
+  return ((Date.now() - 890715600000) / 31556908800).toFixed(20);
 };
 
 const Age = () => {
