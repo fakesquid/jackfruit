@@ -48,7 +48,7 @@ const Autodesk = () => {
             products
           </h3>
           <Link className="project-link disabled" to="/work/autodesk">
-            Case Study Coming Soon
+            Case Study In The Work
           </Link>
         </div>
       </div>
