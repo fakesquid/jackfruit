@@ -46,10 +46,6 @@ const AboutIntro = () => {
         <p>
           Previously, I&apos;ve interned at Autodesk, Hubba, Flashfood, TD, and NUS in product
           design and software development. <br />
-          <span className="details-bold">
-            Currently, I&apos;m looking for full-time frontend development or product design
-            opportunities!
-          </span>
         </p>
         <p>
           I&apos;m passionate about solving problems with technology to make the world a better
