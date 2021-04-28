@@ -6,6 +6,8 @@ import './styles.scss';
 const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1];
 const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
+// Card Component from Paul Henschel https://codesandbox.io/u/drcmda
+
 const Card = ({ bgImage }) => {
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],
@@ -13,7 +15,7 @@ const Card = ({ bgImage }) => {
   }));
   return (
     <animated.div
-      className="project-card"
+      className='project-card'
       onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
       onMouseLeave={() => set({ xys: [0, 0, 1] })}
       style={{
