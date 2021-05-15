@@ -9,7 +9,7 @@ import '../style/main.scss';
 const About = () => {
   return (
     <>
-      <div className="about">
+      <div className='about'>
         <AboutIntro />
         <Pictures />
       </div>
@@ -29,9 +29,9 @@ const AboutIntro = () => {
   });
 
   return (
-    <div className="about-intro">
+    <div className='about-intro'>
       <AboutImage id={1} />
-      <div className="about-details">
+      <div className='about-details'>
         <h1>Hey, I&apos;m Jack.</h1>
         <Age />
         {currentTrack.track && (
@@ -39,10 +39,7 @@ const AboutIntro = () => {
             Currently listening to {currentTrack.track} by {currentTrack.artist}
           </p>
         )}
-        <p>
-          I&apos;m a self-taught UX developer and product designer studying biotech at the
-          University of Waterloo.
-        </p>
+        <p>UX Engineer by day, buidling Defi and designing for social good by night.</p>
         <p>
           Previously, I&apos;ve interned at Autodesk, Hubba, Flashfood, TD, and NUS in product
           design and software development. <br />
@@ -57,10 +54,10 @@ const AboutIntro = () => {
           I care deeply about making a positive social impact and take every opportunity that I can
           to do so. Since 2019, I&apos;ve been volunteering for{' '}
           <a
-            className="others-title"
-            href="https://uwblueprint.org/"
-            target="_blank"
-            rel="noopener noreferrer"
+            className='others-title'
+            href='https://uwblueprint.org/'
+            target='_blank'
+            rel='noopener noreferrer'
           >
             UW Blueprint
           </a>
@@ -73,13 +70,13 @@ const AboutIntro = () => {
 
 const Pictures = () => {
   return (
-    <div className="pictures">
-      <h1 className="pictures-heading">When I’m not working,</h1>
-      <div className="pictures-subheading">
+    <div className='pictures'>
+      <h1 className='pictures-heading'>When I’m not working,</h1>
+      <div className='pictures-subheading'>
         <h3>I sometimes fly around the world.</h3>
-        <hr className="subheading-line" />
+        <hr className='subheading-line' />
       </div>
-      <div className="pictures-grid">
+      <div className='pictures-grid'>
         <AboutImage id={2} />
         <AboutImage id={3} />
         <AboutImage id={4} />
@@ -87,11 +84,11 @@ const Pictures = () => {
         <AboutImage id={6} />
         <AboutImage id={7} />
       </div>
-      <div className="pictures-subheading">
+      <div className='pictures-subheading'>
         <h3>I sometimes go on food adventures!</h3>
-        <hr className="subheading-line" />
+        <hr className='subheading-line' />
       </div>
-      <div className="pictures-grid">
+      <div className='pictures-grid'>
         <AboutImage id={8} />
         <AboutImage id={9} />
         <AboutImage id={10} />
