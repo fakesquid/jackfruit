@@ -12,29 +12,29 @@ const Nav = ({ menuState, setMenuState }) => {
   return (
     <header>
       <Container fluid>
-        <div className="header-inner">
-          <Link to="/" className="nav-link">
+        <div className='header-inner'>
+          <Link to='/' className='nav-link'>
             JACK
           </Link>
           <nav>
-            <Link to="/about" className="nav-link">
+            <Link to='/about' className='nav-link'>
               ABOUT
             </Link>
             <a
-              href="https://drive.google.com/file/d/1tZVOIVHtNf_q7W-mjuwPvMltglmgDIpZ/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="nav-link"
+              href='https://drive.google.com/file/d/14bfnrSNxVgRubbwSQw_UK7oK4IUCdpW8/view'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='nav-link'
             >
               RESUME
             </a>
 
-            <a href="mailto: zj9zhang@uwaterloo.ca" className="nav-link">
+            <a href='mailto: zj9zhang@uwaterloo.ca' className='nav-link'>
               CONTACT
             </a>
           </nav>
           {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events */}
-          <div onClick={() => setMenuState(!menuState)} className="hamburger-menu">
+          <div onClick={() => setMenuState(!menuState)} className='hamburger-menu'>
             <span />
             <span />
           </div>
