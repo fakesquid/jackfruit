@@ -14,7 +14,10 @@ const Headline = () => {
 const Other = () => {
   return (
     <div className='others-banner'>
-      <div className='others-details'>Currently buidling and designing a Defi protocol</div>
+      <div className='others-details'>
+        Currently working on a Cooking assistant, also designing and building for a web3 ETF
+        protocol
+      </div>
     </div>
   );
 };

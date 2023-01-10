@@ -39,7 +39,7 @@ const AboutIntro = () => {
             Currently listening to {currentTrack.track} by {currentTrack.artist}
           </p>
         )}
-        <p>UX Engineer by day, buidling Defi and designing for social good by night.</p>
+        <p>UX Engineer by day, building Defi and designing for social good by night.</p>
         <p>
           Previously, I&apos;ve interned at Autodesk, Hubba, Flashfood, TD, and NUS in product
           design and software development. <br />
