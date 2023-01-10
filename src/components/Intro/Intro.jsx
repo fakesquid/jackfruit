@@ -14,7 +14,7 @@ const Headline = () => {
 const Other = () => {
   return (
     <div className='others-banner'>
-      <div className='others-details'>Currently buidling and designing a Defi protocol</div>
+      <div className='others-details'>Currently building and designing a Defi protocol</div>
     </div>
   );
 };
