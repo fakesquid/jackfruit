@@ -45,7 +45,7 @@ const Menu = ({ setMenuState, menuState }) => {
                       transition={{ delay: 0.3, ...transition }}
                     >
                       <a
-                        href="https://drive.google.com/file/d/1tZVOIVHtNf_q7W-mjuwPvMltglmgDIpZ/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1F9M2f4IdCA2Jx2rGhxRhly8CK26TeQ2j/view"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
