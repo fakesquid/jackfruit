@@ -15,8 +15,7 @@ const Other = () => {
   return (
     <div className='others-banner'>
       <div className='others-details'>
-        Currently working on a Cooking assistant, also designing and building for a web3 ETF
-        protocol
+        Currently designing and building a recipe assistant
       </div>
     </div>
   );
