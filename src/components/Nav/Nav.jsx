@@ -21,7 +21,7 @@ const Nav = ({ menuState, setMenuState }) => {
               ABOUT
             </Link>
             <a
-              href='https://drive.google.com/file/d/14bfnrSNxVgRubbwSQw_UK7oK4IUCdpW8/view'
+              href='https://drive.google.com/file/d/1F9M2f4IdCA2Jx2rGhxRhly8CK26TeQ2j/view'
               target='_blank'
               rel='noopener noreferrer'
               className='nav-link'
