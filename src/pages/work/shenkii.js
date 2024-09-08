@@ -23,7 +23,7 @@ const Shenkii = () => {
             with Shenkii
           </h1>
           <h5>
-            Timeline: <span className="case-details">October 2020 - Present</span>
+            Timeline: <span className="case-details">October 2020 - May 2021</span>
           </h5>
           <h5>
             Role:{' '}
